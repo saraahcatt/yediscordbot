@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-GqsWfEjHm73zbHa7lGbVXfv95jxypKuCtjd6kntjIRA='; script-src-attr 'none'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; frame-src 'none'; worker-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#101010"><meta name="description" content="Conheça a Ye: economia, carreiras, jogos e comunidade no seu servidor do Discord.">
+  <title>Ye — Bot para Discord</title>
+  <link rel="icon" href="assets/ye-avatar.png">
+  <link rel="stylesheet" href="navigation-contact.css">
+  <link rel="stylesheet" href="privacy.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+  <script type="module" src="experience.js?v=test-1"></script>
+</head>
+<body>
+  <a class="skip" href="#economia">Pular apresentação</a>
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="Ye, início">ye.</a>
+    <span class="header-caption">Um projeto de Kaua</span>
+    <div class="header-actions"><a class="header-install" href="testar.html">Testar a Ye</a><button class="menu-toggle" aria-expanded="false" aria-controls="chapters-menu">Funcionalidades <span class="menu-glyph" aria-hidden="true">＋</span></button></div>
+  </header>
+  <nav class="chapters-menu" id="chapters-menu" aria-label="Explorar funcionalidades" hidden>
+    <a href="#inicio">Ye</a><a href="#economia">Economia</a><a href="#carreiras">Carreiras</a><a href="#jogos">Minigames</a><a href="#mundo">Mundo virtual</a><a href="#comunidade">Comunidade</a><a href="#testar">Testar a Ye</a>
+  </nav>
+  <div class="stage" aria-hidden="true"><canvas id="world"></canvas><div class="vignette"></div></div>
+  <main id="story">
+    <section class="chapter hero" id="inicio">
+      <div class="chapter-copy"><p class="kicker">Bot para Discord</p><h1>Seu servidor,<br> com a Ye.</h1><p class="description">Economia, jogos e uma vida virtual<br> para compartilhar com os amigos.</p><a class="chapter-link" href="#economia">Conheça as funcionalidades <span class="link-plus" aria-hidden="true">＋</span></a></div>
+      <img class="fallback-art avatar-fallback" src="assets/ye-avatar.png" alt="Avatar da Ye com cabelo turquesa e fundo rosa">
+    </section>
+    <section class="chapter" id="economia">
+      <div class="chapter-copy"><p class="kicker">Moedas e progresso</p><h2>Economia.</h2><p class="description">Trabalhe, receba sua recompensa diária<br> e transfira moedas para outros jogadores.</p><p class="details">Daily, Pix e ranking do servidor.</p><span class="command">/daily</span></div>
+      <div class="fallback-art fallback-object" aria-hidden="true">$</div>
+    </section>
+    <section class="chapter" id="carreiras">
+      <div class="chapter-copy"><p class="kicker">Empregos e experiência</p><h2>Carreiras.</h2><p class="description">Escolha uma profissão ou treine como proplayer.<br> Ganhe experiência e avance de nível.</p><p class="details">Carreira CLT e Falorant.</p><span class="command">/treinar</span></div>
+      <div class="fallback-art fallback-object" aria-hidden="true">★</div>
+    </section>
+    <section class="chapter" id="jogos">
+      <div class="chapter-copy"><p class="kicker">Uma partida com a galera</p><h2>Minigames.</h2><p class="description">Blackjack, Mines, dados e roletas.<br> Jogue com as moedas que você ganha no bot.</p><p class="details">Partidas solo e multiplayer.</p><span class="command">/cassino</span></div>
+      <div class="fallback-art fallback-object" aria-hidden="true">♠</div>
+    </section>
+    <section class="chapter" id="mundo">
+      <div class="chapter-copy"><p class="kicker">Seu patrimônio no jogo</p><h2>Mundo virtual.</h2><p class="description">Compre imóveis e veículos, abra sua empresa<br> e invista na bolsa da Ye.</p><p class="details">Imóveis, garagens e negócios.</p><span class="command">/imoveis</span></div>
+      <div class="fallback-art fallback-object" aria-hidden="true">⌂</div>
+    </section>
+    <section class="chapter" id="comunidade">
+      <div class="chapter-copy"><p class="kicker">Feito para jogar junto</p><h2>Comunidade.</h2><p class="description">Forme uma facção, participe das eleições<br> e receba recompensas por apoiar o servidor.</p><p class="details">Alianças, presidência e cargos.</p><a class="chapter-link" href="#inicio">Voltar ao início <span class="link-plus" aria-hidden="true">＋</span></a></div>
+      <div class="fallback-art fallback-object" aria-hidden="true">✦</div>
+    </section>
+    <section class="chapter" id="testar">
+      <div class="chapter-copy"><p class="kicker">Versões iniciais</p><h2>A Ye está<br> só começando.</h2><p class="description">O projeto ainda está em desenvolvimento.<br> Se quiser testar, adicione a Ye ao seu servidor.</p><p class="details">As funções podem mudar e falhas ainda podem acontecer.</p><a class="install-button" href="https://discord.com/oauth2/authorize?client_id=1554175767250870274&amp;integration_type=0&amp;scope=bot%20applications.commands&amp;permissions=277294206032" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Adicionar ao Discord</a><a class="version-link" href="testar.html">Sobre esta versão</a></div>
+      <img class="fallback-art avatar-fallback" src="assets/ye-avatar.png" alt="Avatar da Ye">
+    </section>
+  </main>
+  <div class="bottom-bar">
+    <div class="scroll-cue"><span class="mouse" aria-hidden="true"><i></i></span><span>Continue rolando</span></div>
+    <nav class="timeline" aria-label="Navegação da apresentação"><a href="#inicio" aria-label="Apresentação" class="active"><span>Ye</span></a><a href="#economia" aria-label="Economia"><span>Economia</span></a><a href="#carreiras" aria-label="Carreiras"><span>Carreiras</span></a><a href="#jogos" aria-label="Minigames"><span>Jogos</span></a><a href="#mundo" aria-label="Mundo virtual"><span>Mundo</span></a><a href="#comunidade" aria-label="Comunidade"><span>Comunidade</span></a><a href="#testar" aria-label="Testar a Ye"><span>Testar</span></a><i class="timeline-progress"></i></nav>
+    <div class="footer-contact"><a class="privacy-link" href="privacidade.html">Privacidade</a><a class="privacy-link" href="licencas.html">Licenças</a><span class="bottom-signature contact">Discord: <strong>9v50</strong></span></div>
+  </div>
+  <noscript><link rel="stylesheet" href="fallback.css"></noscript>
+</body>
+</html>

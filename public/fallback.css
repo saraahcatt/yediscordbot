@@ -1,0 +1,4 @@
+.stage, .bottom-bar { display: none; }
+.chapter { min-height: 100vh; }
+.chapter-copy { opacity: 1 !important; visibility: visible !important; position: relative !important; }
+.fallback-art { display: block !important; }
